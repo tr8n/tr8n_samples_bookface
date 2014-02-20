@@ -274,10 +274,10 @@ html {
 }
 body {
   font-family: "Tahoma", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.42857143;
   color: #222222;
-  background-color:#EDF0F5;
+  background-color:#fff;
 }
 input,
 button,
@@ -288,7 +288,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #008cba;
+  color: #5077A2;
   text-decoration: none;
 }
 a:hover,
@@ -6071,3 +6071,63 @@ label,
 .affix {
   position: fixed;
 }
+
+
+
+
+
+
+  .nav-sidebar {
+    font-size:12px;
+  }
+
+  .nav-sidebar li a {
+    padding: 5px;
+  }
+
+  .nav-sidebar li.nav-header {
+    text-transform: uppercase;
+    color: #999;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    padding: 15px 5px 0;
+  }
+
+
+  .media-reply {
+    background: #F2F7FF;
+    padding: 5px;
+    font-size: 10px;
+color: #8D9FB9;
+  }
+
+.media-reply input {
+  padding: 5px;
+height: auto;
+}
+
+.media-actions {
+  font-size:10px;
+  font-weight:bold;
+  margin-top:5px;
+}
+
+.media-img {
+  background:#ececec;
+  width:60px;
+  height:60px;
+  border-radius:3px;
+}
+
+
+.friends {
+  margin-top:50px;
+  padding:10px;
+}
+
+.friends h6 {
+  margin:0 0 5px;
+  font-weight:bold;
+}
+
