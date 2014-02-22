@@ -36,7 +36,11 @@
         </a>
         <div class="media-body">
           <div><small class="text-muted">January 1, 2014</small></div>
-          <a href="#"><strong>John Smith</strong></a> and <a href="#"><strong>Jane Smith</strong></a> are now friends.
+          <?php tre("[link: {actor}] and [link: {target}] are now friends", array(
+              "link"=> '<a href="" style="font-weight:bold">{$0}</a>',
+              "actor" => array("object" => array("name" => "John Smith", "gender" => "male"), "attribute" => "name"),
+              "target" => array("object" => array("name" => "Jane Smith", "gender" => "female"), "attribute" => "name"),
+          )) ?>
           <div class="media-actions">
             <a href="#"><strong><?php tre("Like") ?></strong></a> |
             <a href="#"><strong><?php tre("Comment") ?></strong></a>
@@ -56,7 +60,12 @@
         </a>
         <div class="media-body">
           <div><small class="text-muted">January 1, 2014</small></div>
-          <a href="#"><strong>John Smith</strong></a> added 6 photos of Jane Smith
+            <?php tre("[link: {actor}] added [link: {count|| photo}] of {target}", array(
+                "link"=> '<a href="" style="font-weight:bold">{$0}</a>',
+                "actor" => array("object" => array("name" => "John Smith", "gender" => "male"), "attribute" => "name"),
+                "target" => array("object" => array("name" => "Jane Smith", "gender" => "female"), "attribute" => "name"),
+                "count" => 6
+            )) ?>
           <div class="media-actions">
             <a href="#"><strong><?php tre("Like") ?></strong></a> |
             <a href="#"><strong><?php tre("Comment") ?></strong></a>
@@ -76,7 +85,11 @@
         </a>
         <div class="media-body">
           <div><small class="text-muted">January 1, 2014</small></div>
-          <a href="#"><strong>Jane Smith</strong></a> commented on a photo uploaded by <a href="#"><strong>John Smith</strong></a>
+            <?php tre("[link: {actor}] commented on a photo uploaded by [link: {target}]", array(
+                "link"=> '<a href="" style="font-weight:bold">{$0}</a>',
+                "actor" => array("object" => array("name" => "John Smith", "gender" => "male"), "attribute" => "name"),
+                "target" => array("object" => array("name" => "Jane Smith", "gender" => "female"), "attribute" => "name")
+            )) ?>
           <div class="media-actions">
             <a href="#"><strong><?php tre("Like") ?></strong></a> |
             <a href="#"><strong><?php tre("Comment") ?></strong></a>
@@ -96,7 +109,12 @@
         </a>
         <div class="media-body">
           <div><small class="text-muted">January 1, 2014</small></div>
-          <a href="#"><strong>John Smith</strong></a> liked a comment from <a href="#"><strong>Jane Smith</strong></a>
+            <?php tre("[link: {actor}] liked a comment from [link: {target}]", array(
+                "link"=> '<a href="" style="font-weight:bold">{$0}</a>',
+                "actor" => array("object" => array("name" => "John Smith", "gender" => "male"), "attribute" => "name"),
+                "target" => array("object" => array("name" => "Jane Smith", "gender" => "female"), "attribute" => "name")
+            )) ?>
+
           <div class="media-actions">
             <a href="#"><strong><?php tre("Like") ?></strong></a> |
             <a href="#"><strong><?php tre("Comment") ?></strong></a>
@@ -113,19 +131,16 @@
     <div class="col-sm-3">
       <br>
       <div>
-        <strong><a href="#"><?php tre("3 Upcoming Birthdays") ?></a></strong>
+        <strong><a href="#"><?php tre("{count || Upcoming Birthdays}", array("count" => 3)) ?></a></strong>
       </div>
       <div class="well friends">
         <h6><?php tre("Find Friends") ?></h6>
-        <input class="form-control" placeholder="Enter an email address" />
+        <input class="form-control" placeholder="<?php trle("Enter an email address") ?>" />
       </div>
     </div>
   </div>
 
   <br><br><br><br><br>
-
-
-
 
 </div> <!-- /container -->
 
