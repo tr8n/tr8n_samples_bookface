@@ -1,36 +1,60 @@
 <p align="center">
-  <img src="https://raw.github.com/tr8n/tr8n/master/doc/screenshots/tr8nlogo.png">
+  <img src="https://avatars0.githubusercontent.com/u/1316274?v=3&s=200">
 </p>
 
-Tr8n PHP Sample Application
-==================
+PHP Sample Application
+========================
 
-This sample application demonstrates some of Tr8n's capabilities in PHP.
+This sample application demonstrates some of the features of TML.
 
 
 Installation
 ==================
-
-To install the app, use:
-
-```ssh
-$ git clone https://github.com/tr8n/tr8n_samples_bookface_php.git
+```sh
+$ curl -s http://getcomposer.org/installer | php
+$ php composer.phar install
 ```
 
-
-
-
-Where can I get more information?
+Integration
 ==================
 
-* Register on Tr8nHub.com: https://tr8nhub.com
+Before you can proceed with the integration, please visit http://translationexchange.com register as a user and create a new application.
 
-* Read Tr8nHub's documentation: http://wiki.tr8nhub.com
+Once you have created a new application, go to the security tab in the application administration section and copy your application key and secret.
 
-* Visit Tr8nHub's blog: http://blog.tr8nhub.com
 
-* Follow Tr8nHub on Twitter: https://twitter.com/Tr8nHub
+Links
+==================
 
-* Connect with Tr8nHub on Facebook: https://www.facebook.com/pages/tr8nhubcom/138407706218622
+* Register at TranslationExchange.com: https://translationexchange.com
 
-* If you have any questions or suggestions, contact us: feedback@tr8nhub.com
+* Follow TranslationExchange on Twitter: https://twitter.com/translationx
+
+* Connect with TranslationExchange on Facebook: https://www.facebook.com/translationexchange
+
+* If you have any questions or suggestions, contact us: info@translationexchange.com
+
+
+Copyright and license
+==================
+
+Copyright (c) 2015 Translation Exchange, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
